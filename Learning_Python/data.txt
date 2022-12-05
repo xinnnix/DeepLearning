@@ -1,2 +1,1 @@
-Hello
-world
+spam...99...['eggs']
