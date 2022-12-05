@@ -1,2 +1,2 @@
-model_checkpoint_path: "wgan_gp_celeb_a.weights"
-all_model_checkpoint_paths: "wgan_gp_celeb_a.weights"
+model_checkpoint_path: "wgan_gp_butterfly_11600.weights"
+all_model_checkpoint_paths: "wgan_gp_butterfly_11600.weights"
