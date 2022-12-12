@@ -1,2 +1,2 @@
-model_checkpoint_path: "wgan_gp_cursive_7700.weights"
-all_model_checkpoint_paths: "wgan_gp_cursive_7700.weights"
+model_checkpoint_path: "wgan_gp_butterfly_512_.weights"
+all_model_checkpoint_paths: "wgan_gp_butterfly_512_.weights"
