@@ -1,2 +1,2 @@
-model_checkpoint_path: "wgan_gp_dunhuang_512_ver2.weights"
-all_model_checkpoint_paths: "wgan_gp_dunhuang_512_ver2.weights"
+model_checkpoint_path: "wgan_gp_dunhuang_512_v3.weights"
+all_model_checkpoint_paths: "wgan_gp_dunhuang_512_v3.weights"
