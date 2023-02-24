@@ -1,0 +1,280 @@
+PyTorch version: 1.13.1
+CUDA version: 11.7
+
+Random Seed:  1
+Generator(
+  (main): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): ConvTranspose2d(128, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (10): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): ReLU(inplace=True)
+    (12): ConvTranspose2d(64, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (13): Tanh()
+  )
+)
+Discriminator(
+  (main): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (3): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): LeakyReLU(negative_slope=0.2, inplace=True)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (6): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (9): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): LeakyReLU(negative_slope=0.2, inplace=True)
+    (11): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (12): Sigmoid()
+  )
+)
+Epoch 0 [0/3] loss_D_real: 0.9798 loss_D_fake: 0.8300 loss_G 4.8987
+Epoch 1 [0/3] loss_D_real: 0.7889 loss_D_fake: 0.4679 loss_G 5.3094
+Epoch 2 [0/3] loss_D_real: 0.8035 loss_D_fake: 0.5483 loss_G 7.1521
+Epoch 3 [0/3] loss_D_real: 0.3559 loss_D_fake: 0.8038 loss_G 10.4318
+Epoch 4 [0/3] loss_D_real: 0.6162 loss_D_fake: 0.0730 loss_G 8.7450
+Epoch 5 [0/3] loss_D_real: 0.2485 loss_D_fake: 1.3129 loss_G 12.7053
+Epoch 6 [0/3] loss_D_real: 0.5553 loss_D_fake: 0.0122 loss_G 11.1282
+Epoch 7 [0/3] loss_D_real: 0.2409 loss_D_fake: 0.1834 loss_G 9.7037
+Epoch 8 [0/3] loss_D_real: 0.2109 loss_D_fake: 0.8542 loss_G 15.2147
+Epoch 9 [0/3] loss_D_real: 0.1106 loss_D_fake: 3.4570 loss_G 18.2627
+Epoch 10 [0/3] loss_D_real: 0.1376 loss_D_fake: 0.0038 loss_G 6.7209
+Epoch 11 [0/3] loss_D_real: 0.4133 loss_D_fake: 0.0037 loss_G 8.2359
+Epoch 12 [0/3] loss_D_real: 0.5022 loss_D_fake: 0.0049 loss_G 6.9759
+Epoch 13 [0/3] loss_D_real: 0.3218 loss_D_fake: 0.0216 loss_G 5.0334
+Epoch 14 [0/3] loss_D_real: 0.3324 loss_D_fake: 0.3235 loss_G 5.0919
+Epoch 15 [0/3] loss_D_real: 0.4933 loss_D_fake: 0.7876 loss_G 6.3251
+Epoch 16 [0/3] loss_D_real: 0.5315 loss_D_fake: 0.2060 loss_G 4.8279
+Epoch 17 [0/3] loss_D_real: 0.3094 loss_D_fake: 1.0412 loss_G 6.8814
+Epoch 18 [0/3] loss_D_real: 0.3570 loss_D_fake: 0.3710 loss_G 4.7941
+Epoch 19 [0/3] loss_D_real: 1.7016 loss_D_fake: 0.0500 loss_G 2.7898
+Epoch 20 [0/3] loss_D_real: 0.5981 loss_D_fake: 0.1453 loss_G 3.0175
+Epoch 21 [0/3] loss_D_real: 0.3409 loss_D_fake: 0.6589 loss_G 4.5549
+Epoch 22 [0/3] loss_D_real: 1.3960 loss_D_fake: 0.0465 loss_G 2.5369
+Epoch 23 [0/3] loss_D_real: 0.5749 loss_D_fake: 0.4621 loss_G 4.3031
+Epoch 24 [0/3] loss_D_real: 1.4604 loss_D_fake: 0.0613 loss_G 2.7880
+Epoch 25 [0/3] loss_D_real: 0.6535 loss_D_fake: 0.3488 loss_G 3.3233
+Epoch 26 [0/3] loss_D_real: 0.5351 loss_D_fake: 0.4570 loss_G 4.1637
+Epoch 27 [0/3] loss_D_real: 0.5866 loss_D_fake: 0.1499 loss_G 1.9426
+Epoch 28 [0/3] loss_D_real: 0.8954 loss_D_fake: 0.4827 loss_G 0.9788
+Epoch 29 [0/3] loss_D_real: 0.5627 loss_D_fake: 0.2719 loss_G 2.5708
+Epoch 30 [0/3] loss_D_real: 0.4312 loss_D_fake: 0.4905 loss_G 3.3039
+Epoch 31 [0/3] loss_D_real: 0.6373 loss_D_fake: 0.3119 loss_G 2.5970
+Epoch 32 [0/3] loss_D_real: 0.3389 loss_D_fake: 0.4069 loss_G 3.7753
+Epoch 33 [0/3] loss_D_real: 0.9277 loss_D_fake: 0.3284 loss_G 2.7469
+Epoch 34 [0/3] loss_D_real: 0.2621 loss_D_fake: 0.3033 loss_G 3.5227
+Epoch 35 [0/3] loss_D_real: 0.3109 loss_D_fake: 0.4511 loss_G 4.0036
+Epoch 36 [0/3] loss_D_real: 0.3349 loss_D_fake: 0.3633 loss_G 4.6190
+Epoch 37 [0/3] loss_D_real: 0.2656 loss_D_fake: 0.1709 loss_G 4.3852
+Epoch 38 [0/3] loss_D_real: 0.2037 loss_D_fake: 0.2435 loss_G 5.0626
+Epoch 39 [0/3] loss_D_real: 0.2495 loss_D_fake: 0.1786 loss_G 5.3994
+Epoch 40 [0/3] loss_D_real: 0.2072 loss_D_fake: 0.4695 loss_G 6.2387
+Epoch 41 [0/3] loss_D_real: 0.2214 loss_D_fake: 0.2260 loss_G 5.1195
+Epoch 42 [0/3] loss_D_real: 0.1091 loss_D_fake: 0.0425 loss_G 4.1117
+Epoch 43 [0/3] loss_D_real: 0.3585 loss_D_fake: 0.2866 loss_G 1.9099
+Epoch 44 [0/3] loss_D_real: 0.3435 loss_D_fake: 0.1285 loss_G 3.3031
+Epoch 45 [0/3] loss_D_real: 0.3519 loss_D_fake: 0.2289 loss_G 4.4869
+Epoch 46 [0/3] loss_D_real: 0.1552 loss_D_fake: 0.2849 loss_G 4.9857
+Epoch 47 [0/3] loss_D_real: 0.1027 loss_D_fake: 0.2070 loss_G 4.8012
+Epoch 48 [0/3] loss_D_real: 0.1377 loss_D_fake: 0.2115 loss_G 5.2745
+Epoch 49 [0/3] loss_D_real: 0.2812 loss_D_fake: 0.0822 loss_G 4.8188
+Epoch 50 [0/3] loss_D_real: 0.2314 loss_D_fake: 0.4828 loss_G 8.6597
+Epoch 51 [0/3] loss_D_real: 0.8031 loss_D_fake: 0.0031 loss_G 10.1393
+Epoch 52 [0/3] loss_D_real: 0.8652 loss_D_fake: 0.0026 loss_G 11.3529
+Epoch 53 [0/3] loss_D_real: 0.5138 loss_D_fake: 0.0105 loss_G 8.4543
+Epoch 54 [0/3] loss_D_real: 0.4931 loss_D_fake: 0.0203 loss_G 7.2708
+Epoch 55 [0/3] loss_D_real: 0.8468 loss_D_fake: 0.0049 loss_G 8.2399
+Epoch 56 [0/3] loss_D_real: 0.2186 loss_D_fake: 0.1454 loss_G 5.9646
+Epoch 57 [0/3] loss_D_real: 0.5337 loss_D_fake: 0.1052 loss_G 4.3229
+Epoch 58 [0/3] loss_D_real: 0.1765 loss_D_fake: 0.1000 loss_G 4.3276
+Epoch 59 [0/3] loss_D_real: 0.1138 loss_D_fake: 0.1220 loss_G 4.6369
+Epoch 60 [0/3] loss_D_real: 0.1328 loss_D_fake: 0.1155 loss_G 5.0413
+Epoch 61 [0/3] loss_D_real: 0.2055 loss_D_fake: 0.3629 loss_G 7.2031
+Epoch 62 [0/3] loss_D_real: 0.5449 loss_D_fake: 0.0324 loss_G 5.5107
+Epoch 63 [0/3] loss_D_real: 0.2527 loss_D_fake: 0.0450 loss_G 6.1744
+Epoch 64 [0/3] loss_D_real: 0.2182 loss_D_fake: 0.0760 loss_G 6.0917
+Epoch 65 [0/3] loss_D_real: 0.2175 loss_D_fake: 0.0807 loss_G 6.3260
+Epoch 66 [0/3] loss_D_real: 0.2178 loss_D_fake: 0.1053 loss_G 5.4519
+Epoch 67 [0/3] loss_D_real: 0.2320 loss_D_fake: 0.2407 loss_G 7.7728
+Epoch 68 [0/3] loss_D_real: 0.4256 loss_D_fake: 0.0088 loss_G 6.7937
+Epoch 69 [0/3] loss_D_real: 0.2568 loss_D_fake: 0.0120 loss_G 7.5067
+Epoch 70 [0/3] loss_D_real: 0.7303 loss_D_fake: 0.0044 loss_G 7.4800
+Epoch 71 [0/3] loss_D_real: 0.1129 loss_D_fake: 0.1007 loss_G 5.8380
+Epoch 72 [0/3] loss_D_real: 0.1961 loss_D_fake: 0.1660 loss_G 5.8424
+Epoch 73 [0/3] loss_D_real: 0.3023 loss_D_fake: 0.1069 loss_G 5.1533
+Epoch 74 [0/3] loss_D_real: 0.1947 loss_D_fake: 0.1913 loss_G 5.4680
+Epoch 75 [0/3] loss_D_real: 0.2359 loss_D_fake: 0.1930 loss_G 6.0031
+Epoch 76 [0/3] loss_D_real: 0.1801 loss_D_fake: 0.1988 loss_G 6.3707
+Epoch 77 [0/3] loss_D_real: 0.3388 loss_D_fake: 0.1227 loss_G 6.0573
+Epoch 78 [0/3] loss_D_real: 0.1321 loss_D_fake: 0.2397 loss_G 5.3657
+Epoch 79 [0/3] loss_D_real: 0.1856 loss_D_fake: 0.2718 loss_G 5.3485
+Epoch 80 [0/3] loss_D_real: 1.7447 loss_D_fake: 0.0064 loss_G 0.9443
+Epoch 81 [0/3] loss_D_real: 0.3343 loss_D_fake: 0.0342 loss_G 2.9557
+Epoch 82 [0/3] loss_D_real: 0.2906 loss_D_fake: 0.0771 loss_G 3.8395
+Epoch 83 [0/3] loss_D_real: 0.2376 loss_D_fake: 0.1054 loss_G 3.8278
+Epoch 84 [0/3] loss_D_real: 0.2462 loss_D_fake: 0.2479 loss_G 4.3282
+Epoch 85 [0/3] loss_D_real: 0.7724 loss_D_fake: 0.1651 loss_G 3.3653
+Epoch 86 [0/3] loss_D_real: 0.1689 loss_D_fake: 0.4987 loss_G 5.3510
+Epoch 87 [0/3] loss_D_real: 0.1568 loss_D_fake: 0.5424 loss_G 6.5741
+Epoch 88 [0/3] loss_D_real: 2.8741 loss_D_fake: 0.0017 loss_G 4.5167
+Epoch 89 [0/3] loss_D_real: 0.6871 loss_D_fake: 0.0107 loss_G 6.4834
+Epoch 90 [0/3] loss_D_real: 0.8135 loss_D_fake: 0.0433 loss_G 3.7681
+Epoch 91 [0/3] loss_D_real: 0.3463 loss_D_fake: 0.2622 loss_G 4.1333
+Epoch 92 [0/3] loss_D_real: 0.0233 loss_D_fake: 2.3964 loss_G 7.1465
+Epoch 93 [0/3] loss_D_real: 0.6751 loss_D_fake: 0.0808 loss_G 3.4391
+Epoch 94 [0/3] loss_D_real: 0.5645 loss_D_fake: 0.1878 loss_G 2.5009
+Epoch 95 [0/3] loss_D_real: 0.2483 loss_D_fake: 0.7602 loss_G 5.2156
+Epoch 96 [0/3] loss_D_real: 0.4928 loss_D_fake: 0.0500 loss_G 2.8994
+Epoch 97 [0/3] loss_D_real: 0.1457 loss_D_fake: 0.7011 loss_G 4.9147
+Epoch 98 [0/3] loss_D_real: 0.2930 loss_D_fake: 0.3155 loss_G 4.1412
+Epoch 99 [0/3] loss_D_real: 0.3790 loss_D_fake: 0.1276 loss_G 3.7419
+Epoch 100 [0/3] loss_D_real: 0.1229 loss_D_fake: 0.1241 loss_G 4.4878
+Epoch 101 [0/3] loss_D_real: 0.1341 loss_D_fake: 0.2004 loss_G 5.0974
+Epoch 102 [0/3] loss_D_real: 0.4894 loss_D_fake: 0.0187 loss_G 4.2705
+Epoch 103 [0/3] loss_D_real: 0.0981 loss_D_fake: 0.1824 loss_G 5.5604
+Epoch 104 [0/3] loss_D_real: 0.3017 loss_D_fake: 0.0859 loss_G 3.7781
+Epoch 105 [0/3] loss_D_real: 0.0859 loss_D_fake: 0.2559 loss_G 4.6160
+Epoch 106 [0/3] loss_D_real: 0.1096 loss_D_fake: 0.0865 loss_G 5.2686
+Epoch 107 [0/3] loss_D_real: 0.0869 loss_D_fake: 0.1746 loss_G 5.2164
+Epoch 108 [0/3] loss_D_real: 0.3241 loss_D_fake: 0.1156 loss_G 4.6702
+Epoch 109 [0/3] loss_D_real: 0.0369 loss_D_fake: 2.1676 loss_G 9.5031
+Epoch 110 [0/3] loss_D_real: 0.1212 loss_D_fake: 0.1857 loss_G 3.5045
+Epoch 111 [0/3] loss_D_real: 0.2148 loss_D_fake: 0.1077 loss_G 4.1337
+Epoch 112 [0/3] loss_D_real: 0.0923 loss_D_fake: 0.0950 loss_G 4.7018
+Epoch 113 [0/3] loss_D_real: 0.1824 loss_D_fake: 0.2266 loss_G 5.5392
+Epoch 114 [0/3] loss_D_real: 0.4050 loss_D_fake: 0.2637 loss_G 4.7119
+Epoch 115 [0/3] loss_D_real: 0.0855 loss_D_fake: 2.3556 loss_G 8.3412
+Epoch 116 [0/3] loss_D_real: 0.1648 loss_D_fake: 0.7919 loss_G 6.2346
+Epoch 117 [0/3] loss_D_real: 0.1484 loss_D_fake: 0.5366 loss_G 6.7561
+Epoch 118 [0/3] loss_D_real: 0.8204 loss_D_fake: 0.0567 loss_G 4.0999
+Epoch 119 [0/3] loss_D_real: 0.3824 loss_D_fake: 0.2524 loss_G 4.1755
+Epoch 120 [0/3] loss_D_real: 0.1138 loss_D_fake: 1.5768 loss_G 8.4384
+Epoch 121 [0/3] loss_D_real: 0.0544 loss_D_fake: 1.3122 loss_G 5.9700
+Epoch 122 [0/3] loss_D_real: 0.0979 loss_D_fake: 0.6166 loss_G 4.5887
+Epoch 123 [0/3] loss_D_real: 0.2238 loss_D_fake: 0.6072 loss_G 5.0872
+Epoch 124 [0/3] loss_D_real: 0.4842 loss_D_fake: 0.2036 loss_G 3.9755
+Epoch 125 [0/3] loss_D_real: 0.1884 loss_D_fake: 0.3769 loss_G 5.3020
+Epoch 126 [0/3] loss_D_real: 0.4616 loss_D_fake: 0.1079 loss_G 3.3277
+Epoch 127 [0/3] loss_D_real: 0.0936 loss_D_fake: 1.0224 loss_G 6.1947
+Epoch 128 [0/3] loss_D_real: 0.3393 loss_D_fake: 0.7512 loss_G 6.6775
+Epoch 129 [0/3] loss_D_real: 0.6280 loss_D_fake: 0.1207 loss_G 4.5244
+Epoch 130 [0/3] loss_D_real: 0.3847 loss_D_fake: 0.0812 loss_G 4.1846
+Epoch 131 [0/3] loss_D_real: 0.1562 loss_D_fake: 0.2818 loss_G 4.6053
+Epoch 132 [0/3] loss_D_real: 0.1882 loss_D_fake: 0.1780 loss_G 4.1725
+Epoch 133 [0/3] loss_D_real: 0.1715 loss_D_fake: 0.2777 loss_G 4.8421
+Epoch 134 [0/3] loss_D_real: 0.6826 loss_D_fake: 0.0418 loss_G 3.0779
+Epoch 135 [0/3] loss_D_real: 0.1320 loss_D_fake: 0.1828 loss_G 3.3706
+Epoch 136 [0/3] loss_D_real: 0.2611 loss_D_fake: 0.2467 loss_G 3.0436
+Epoch 137 [0/3] loss_D_real: 0.2477 loss_D_fake: 0.4678 loss_G 3.6256
+Epoch 138 [0/3] loss_D_real: 0.2107 loss_D_fake: 0.2607 loss_G 3.7503
+Epoch 139 [0/3] loss_D_real: 0.2055 loss_D_fake: 0.1961 loss_G 4.0960
+Epoch 140 [0/3] loss_D_real: 0.0981 loss_D_fake: 0.1279 loss_G 4.3891
+Epoch 141 [0/3] loss_D_real: 0.0963 loss_D_fake: 0.2013 loss_G 5.2959
+Epoch 142 [0/3] loss_D_real: 0.2058 loss_D_fake: 0.2651 loss_G 5.4066
+Epoch 143 [0/3] loss_D_real: 1.0170 loss_D_fake: 0.0519 loss_G 1.6572
+Epoch 144 [0/3] loss_D_real: 0.2031 loss_D_fake: 0.1956 loss_G 2.4134
+Epoch 145 [0/3] loss_D_real: 0.3066 loss_D_fake: 0.0286 loss_G 3.9076
+Epoch 146 [0/3] loss_D_real: 0.1853 loss_D_fake: 0.1189 loss_G 4.5743
+Epoch 147 [0/3] loss_D_real: 0.1951 loss_D_fake: 0.2731 loss_G 4.2624
+Epoch 148 [0/3] loss_D_real: 0.1952 loss_D_fake: 0.1412 loss_G 3.6719
+Epoch 149 [0/3] loss_D_real: 0.1378 loss_D_fake: 0.1199 loss_G 3.9276
+Epoch 150 [0/3] loss_D_real: 0.2782 loss_D_fake: 0.0854 loss_G 4.1313
+Epoch 151 [0/3] loss_D_real: 0.1510 loss_D_fake: 0.2142 loss_G 4.8568
+Epoch 152 [0/3] loss_D_real: 0.1265 loss_D_fake: 0.3179 loss_G 6.2847
+Epoch 153 [0/3] loss_D_real: 0.2514 loss_D_fake: 0.1084 loss_G 5.0100
+Epoch 154 [0/3] loss_D_real: 0.3119 loss_D_fake: 0.0739 loss_G 4.1380
+Epoch 155 [0/3] loss_D_real: 0.1080 loss_D_fake: 0.1603 loss_G 4.1306
+Epoch 156 [0/3] loss_D_real: 0.1565 loss_D_fake: 0.0580 loss_G 3.9750
+Epoch 157 [0/3] loss_D_real: 0.1428 loss_D_fake: 0.0982 loss_G 4.1047
+Epoch 158 [0/3] loss_D_real: 0.8331 loss_D_fake: 0.0198 loss_G 2.6215
+Epoch 159 [0/3] loss_D_real: 0.1524 loss_D_fake: 0.0568 loss_G 3.7018
+Epoch 160 [0/3] loss_D_real: 0.1216 loss_D_fake: 0.1231 loss_G 4.2876
+Epoch 161 [0/3] loss_D_real: 0.2207 loss_D_fake: 0.0759 loss_G 3.4408
+Epoch 162 [0/3] loss_D_real: 0.0156 loss_D_fake: 1.0127 loss_G 7.3515
+Epoch 163 [0/3] loss_D_real: 0.0327 loss_D_fake: 0.0885 loss_G 3.5153
+Epoch 164 [0/3] loss_D_real: 0.1613 loss_D_fake: 0.0991 loss_G 3.7249
+Epoch 165 [0/3] loss_D_real: 0.0650 loss_D_fake: 1.4967 loss_G 9.9926
+Epoch 166 [0/3] loss_D_real: 0.5245 loss_D_fake: 0.0168 loss_G 5.6407
+Epoch 167 [0/3] loss_D_real: 1.1977 loss_D_fake: 0.0222 loss_G 4.1113
+Epoch 168 [0/3] loss_D_real: 0.4659 loss_D_fake: 0.2651 loss_G 3.6306
+Epoch 169 [0/3] loss_D_real: 0.1627 loss_D_fake: 0.2272 loss_G 4.4601
+Epoch 170 [0/3] loss_D_real: 0.5744 loss_D_fake: 0.0602 loss_G 2.8692
+Epoch 171 [0/3] loss_D_real: 0.1466 loss_D_fake: 0.2225 loss_G 3.2784
+Epoch 172 [0/3] loss_D_real: 0.2208 loss_D_fake: 0.4494 loss_G 4.6026
+Epoch 173 [0/3] loss_D_real: 0.2333 loss_D_fake: 0.6637 loss_G 6.3753
+Epoch 174 [0/3] loss_D_real: 0.0830 loss_D_fake: 0.3205 loss_G 5.2987
+Epoch 175 [0/3] loss_D_real: 0.0922 loss_D_fake: 0.3163 loss_G 4.9523
+Epoch 176 [0/3] loss_D_real: 0.1377 loss_D_fake: 0.1465 loss_G 4.5207
+Epoch 177 [0/3] loss_D_real: 0.1491 loss_D_fake: 0.2226 loss_G 5.6903
+Epoch 178 [0/3] loss_D_real: 0.5547 loss_D_fake: 0.0425 loss_G 3.6136
+Epoch 179 [0/3] loss_D_real: 0.0705 loss_D_fake: 0.1838 loss_G 2.9519
+Epoch 180 [0/3] loss_D_real: 0.1752 loss_D_fake: 0.0427 loss_G 3.9917
+Epoch 181 [0/3] loss_D_real: 0.1752 loss_D_fake: 0.0763 loss_G 4.0244
+Epoch 182 [0/3] loss_D_real: 0.1712 loss_D_fake: 0.1841 loss_G 4.4728
+Epoch 183 [0/3] loss_D_real: 0.6086 loss_D_fake: 0.0806 loss_G 2.0402
+Epoch 184 [0/3] loss_D_real: 1.0786 loss_D_fake: 0.0076 loss_G 1.8681
+Epoch 185 [0/3] loss_D_real: 0.1890 loss_D_fake: 0.0520 loss_G 4.6513
+Epoch 186 [0/3] loss_D_real: 0.1647 loss_D_fake: 0.4543 loss_G 4.1826
+Epoch 187 [0/3] loss_D_real: 0.5873 loss_D_fake: 0.3069 loss_G 3.5135
+Epoch 188 [0/3] loss_D_real: 0.2110 loss_D_fake: 0.2723 loss_G 4.3575
+Epoch 189 [0/3] loss_D_real: 0.2118 loss_D_fake: 0.2113 loss_G 4.8951
+Epoch 190 [0/3] loss_D_real: 0.1842 loss_D_fake: 0.1306 loss_G 4.9682
+Epoch 191 [0/3] loss_D_real: 0.1325 loss_D_fake: 0.1604 loss_G 6.0412
+Epoch 192 [0/3] loss_D_real: 0.2151 loss_D_fake: 0.0543 loss_G 5.5290
+Epoch 193 [0/3] loss_D_real: 0.1780 loss_D_fake: 1.0090 loss_G 9.9855
+Epoch 194 [0/3] loss_D_real: 0.0885 loss_D_fake: 1.1948 loss_G 8.7164
+Epoch 195 [0/3] loss_D_real: 0.0453 loss_D_fake: 0.8175 loss_G 6.3560
+Epoch 196 [0/3] loss_D_real: 0.1025 loss_D_fake: 0.2537 loss_G 4.6289
+Epoch 197 [0/3] loss_D_real: 0.1145 loss_D_fake: 0.1261 loss_G 4.4172
+Epoch 198 [0/3] loss_D_real: 0.1408 loss_D_fake: 0.0777 loss_G 4.4373
+Epoch 199 [0/3] loss_D_real: 0.1248 loss_D_fake: 0.1397 loss_G 4.8584
+Epoch 200 [0/3] loss_D_real: 0.1918 loss_D_fake: 0.2661 loss_G 6.1202
+Epoch 201 [0/3] loss_D_real: 0.7062 loss_D_fake: 0.0129 loss_G 4.3939
+Epoch 202 [0/3] loss_D_real: 0.3266 loss_D_fake: 0.0538 loss_G 4.6526
+Epoch 203 [0/3] loss_D_real: 0.3419 loss_D_fake: 0.0470 loss_G 4.2568
+Epoch 204 [0/3] loss_D_real: 0.3025 loss_D_fake: 0.0438 loss_G 4.2614
+Epoch 205 [0/3] loss_D_real: 0.8046 loss_D_fake: 0.0188 loss_G 4.1406
+Epoch 206 [0/3] loss_D_real: 0.3354 loss_D_fake: 0.2087 loss_G 4.2430
+Epoch 207 [0/3] loss_D_real: 0.2043 loss_D_fake: 0.9931 loss_G 7.1589
+Epoch 208 [0/3] loss_D_real: 0.2186 loss_D_fake: 0.0475 loss_G 5.2129
+Epoch 209 [0/3] loss_D_real: 0.1318 loss_D_fake: 0.1712 loss_G 5.1531
+Epoch 210 [0/3] loss_D_real: 0.5012 loss_D_fake: 0.1859 loss_G 4.1892
+Epoch 211 [0/3] loss_D_real: 0.0692 loss_D_fake: 0.4197 loss_G 5.2722
+Epoch 212 [0/3] loss_D_real: 0.1706 loss_D_fake: 0.8406 loss_G 8.5391
+Epoch 213 [0/3] loss_D_real: 0.0306 loss_D_fake: 0.4265 loss_G 6.3549
+Epoch 214 [0/3] loss_D_real: 0.1177 loss_D_fake: 0.5352 loss_G 6.6518
+Epoch 215 [0/3] loss_D_real: 0.3253 loss_D_fake: 0.1156 loss_G 4.2543
+Epoch 216 [0/3] loss_D_real: 0.1825 loss_D_fake: 0.3190 loss_G 4.9759
+Epoch 217 [0/3] loss_D_real: 0.5935 loss_D_fake: 0.0454 loss_G 3.1936
+Epoch 218 [0/3] loss_D_real: 0.1780 loss_D_fake: 0.0805 loss_G 3.2372
+Epoch 219 [0/3] loss_D_real: 0.2005 loss_D_fake: 0.0231 loss_G 3.6728
+Epoch 220 [0/3] loss_D_real: 0.2511 loss_D_fake: 0.0825 loss_G 3.3881
+Epoch 221 [0/3] loss_D_real: 0.1691 loss_D_fake: 0.0830 loss_G 3.1853
+Epoch 222 [0/3] loss_D_real: 0.2040 loss_D_fake: 0.0719 loss_G 2.8948
+Epoch 223 [0/3] loss_D_real: 0.1322 loss_D_fake: 0.0749 loss_G 3.2508
+Epoch 224 [0/3] loss_D_real: 0.1286 loss_D_fake: 0.1951 loss_G 2.8970
+Epoch 225 [0/3] loss_D_real: 0.2746 loss_D_fake: 0.0577 loss_G 2.9405
+Epoch 226 [0/3] loss_D_real: 0.2642 loss_D_fake: 0.1215 loss_G 3.4547
+Epoch 227 [0/3] loss_D_real: 0.2164 loss_D_fake: 0.1300 loss_G 3.6854
+Epoch 228 [0/3] loss_D_real: 0.1380 loss_D_fake: 0.2077 loss_G 4.4519
+Epoch 229 [0/3] loss_D_real: 0.1314 loss_D_fake: 0.1736 loss_G 4.2874
+Epoch 230 [0/3] loss_D_real: 0.1392 loss_D_fake: 0.1599 loss_G 4.5072
+Epoch 231 [0/3] loss_D_real: 0.1375 loss_D_fake: 0.2071 loss_G 4.9995
+Epoch 232 [0/3] loss_D_real: 0.1417 loss_D_fake: 0.1695 loss_G 5.0250
+Epoch 233 [0/3] loss_D_real: 0.2530 loss_D_fake: 0.1460 loss_G 4.6869
+Epoch 234 [0/3] loss_D_real: 0.1354 loss_D_fake: 0.5100 loss_G 8.0534
+Epoch 235 [0/3] loss_D_real: 0.0919 loss_D_fake: 0.6308 loss_G 9.4996
+Epoch 236 [0/3] loss_D_real: 0.0533 loss_D_fake: 1.0975 loss_G 10.6341
+Epoch 237 [0/3] loss_D_real: 0.0235 loss_D_fake: 0.7380 loss_G 7.0870
+Epoch 238 [0/3] loss_D_real: 0.1180 loss_D_fake: 0.5076 loss_G 7.5530
+Epoch 239 [0/3] loss_D_real: 0.1222 loss_D_fake: 0.3744 loss_G 6.7713
+Epoch 240 [0/3] loss_D_real: 0.3585 loss_D_fake: 0.0759 loss_G 4.6048

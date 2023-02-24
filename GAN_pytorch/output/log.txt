@@ -1,4 +1,0 @@
-PyTorch version: 1.13.1
-CUDA version: 11.7
-
-Random Seed:  1
